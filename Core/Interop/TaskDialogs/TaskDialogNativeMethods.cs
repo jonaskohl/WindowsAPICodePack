@@ -73,8 +73,8 @@ namespace Microsoft.WindowsAPICodePack.Dialogs
         {
             internal IconUnion(int i)
             {
-                mainIcon = i;
                 spacer = IntPtr.Zero;
+                mainIcon = i;
             }
 
             [FieldOffset(0)]
