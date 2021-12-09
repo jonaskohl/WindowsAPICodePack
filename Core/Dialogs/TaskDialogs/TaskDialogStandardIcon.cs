@@ -15,21 +15,46 @@ namespace Microsoft.WindowsAPICodePack.Dialogs
         /// <summary>
         /// Displays the warning icon.
         /// </summary>
-        Warning = 65535,
+        Warning = ushort.MaxValue,
 
         /// <summary>
         /// Displays the error icon.
         /// </summary>
-        Error = 65534,
+        Error = ushort.MaxValue - 1,
 
         /// <summary>
         /// Displays the Information icon.
         /// </summary>
-        Information = 65533,
+        Information = ushort.MaxValue - 2,
 
         /// <summary>
         /// Displays the User Account Control shield.
         /// </summary>
-        Shield = 65532 
+        Shield = ushort.MaxValue - 3,
+
+        /// <summary>
+        /// Displays the User Account Control shield and gives the header a blue background.
+        /// </summary>
+        ShieldBlue = ushort.MaxValue - 4,
+
+        /// <summary>
+        /// Displays the a warning shield icon.
+        /// </summary>
+        ShieldWarning = ushort.MaxValue - 5,
+
+        /// <summary>
+        /// Displays the a error shield icon.
+        /// </summary>
+        ShieldError = ushort.MaxValue - 6,
+
+        /// <summary>
+        /// Displays the a success shield icon.
+        /// </summary>
+        ShieldSuccess = ushort.MaxValue - 7,
+
+        /// <summary>
+        /// Displays the User Account Control shield and gives the header a gray background.
+        /// </summary>
+        ShieldGray = ushort.MaxValue - 8
     }
 }
